@@ -20,6 +20,24 @@ public class characters {
         
         System.out.println(secondChar);
         
+        int counter = 0;
+        int total = 0;
         
+        while(counter <= 10) {
+            total += counter;
+        }
+        System.out.println(total);
+        
+        for(int count = 0; count <= 20; count++) {
+            System.out.println(count);
+        }
+        
+        for(int counte = 0; counte <= 10; counte++) {
+            for(int multip = 0; multip <=10; multip++) {
+                System.out.print(counte * multip);
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
     }
 }
