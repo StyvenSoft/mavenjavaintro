@@ -39,5 +39,17 @@ public class characters {
             }
             System.out.println();
         }
+        
+        for(int fila = 0; fila <= 10; fila++) {
+            for(int column = 0; column <= 10; column++) {
+                if (column > fila) {
+                    break;
+                }
+                
+                System.out.println("*");
+                System.out.println(" ");
+            }
+            System.out.println();
+        }
     }
 }
