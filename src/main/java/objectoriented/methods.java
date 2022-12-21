@@ -8,14 +8,15 @@ package objectoriented;
  *
  * @author s7eveen
  */
-public class account {
-    double residue;
-    int agency;
-    int number;
-    String holder;
+public class methods {
     
-    void depositary(double value) {
-        residue += value;
+    public static void main(String[] args) {
+        account newAccount = new account();
+        
+        newAccount.depositary(3000);
+        
+        System.out.println(newAccount.residue);
+        
     }
     
 }
