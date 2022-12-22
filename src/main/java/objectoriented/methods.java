@@ -17,6 +17,8 @@ public class methods {
         
         System.out.println(newAccount.residue);
         
+        newAccount.remove(100);
+        
     }
     
 }

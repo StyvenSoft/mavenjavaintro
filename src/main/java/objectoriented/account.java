@@ -14,8 +14,18 @@ public class account {
     int number;
     String holder;
     
-    void depositary(double value) {
-        residue += value;
+    public void depositary(double value) {
+        // residue += value;
+        this.residue = this.residue + value;
+    }
+    
+    public boolean remove(double value) {
+        if (this.residue >= value) {
+            this.residue = this.residue - value;
+            return true;
+        } else {
+            return false;
+        }
     }
     
 }
