@@ -11,13 +11,13 @@ package objectoriented;
 public class createaccount {
     
     public void mainCreate() {
-        account firstAccount = new account();
+        Account firstAccount = new Account();
         
         firstAccount.residue = 16000;
         
         System.out.println(firstAccount.residue);
         
-        account secondAccount = new account();
+        Account secondAccount = new Account();
         
         secondAccount.residue = 5000;
         

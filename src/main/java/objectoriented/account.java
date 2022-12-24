@@ -8,11 +8,11 @@ package objectoriented;
  *
  * @author s7eveen
  */
-public class account {
+public class Account {
     double residue;
     int agency;
     int number;
-    String holder;
+    Client holder;
     
     public void depositary(double value) {
         // residue += value;
@@ -27,7 +27,7 @@ public class account {
         return false;
     }
     
-    public boolean transfer(double value, account account) {
+    public boolean transfer(double value, Account account) {
         if (this.residue >= value) {
             this.residue -= value;
             account.depositary(value);

@@ -11,7 +11,7 @@ package objectoriented;
 public class methods {
     
     public static void main(String[] args) {
-        account newAccount = new account();
+        Account newAccount = new Account();
         
         newAccount.depositary(3000);
         
@@ -20,7 +20,7 @@ public class methods {
         newAccount.remove(100);
         System.out.println(newAccount.residue);
         
-        account accountUser = new account();
+        Account accountUser = new Account();
         accountUser.depositary(1000);
         
         boolean conTransfer = accountUser.transfer(400, newAccount);

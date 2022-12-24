@@ -11,10 +11,10 @@ package objectoriented;
 public class newReference {
     
     public void newReference() {
-        account firstAccount = new account();
+        Account firstAccount = new Account();
         firstAccount.residue = 23000;
         
-        account secondAccount = firstAccount;
+        Account secondAccount = firstAccount;
         
         secondAccount.residue = 1200;
         
