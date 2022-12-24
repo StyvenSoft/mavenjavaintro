@@ -23,8 +23,13 @@ public class methods {
         account accountUser = new account();
         accountUser.depositary(1000);
         
-        accountUser.transfer(400, newAccount);
+        boolean conTransfer = accountUser.transfer(400, newAccount);
         
+        if(conTransfer) {
+            System.out.println("Transferencia exitosa!");
+        } else {
+            System.out.println("Lo sentimos, no se puede realizar la transferencia");
+        }
     }
     
 }

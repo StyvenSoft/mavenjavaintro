@@ -16,26 +16,24 @@ public class account {
     
     public void depositary(double value) {
         // residue += value;
-        this.residue = this.residue + value;
+        this.residue += value;
     }
     
     public boolean remove(double value) {
         if (this.residue >= value) {
-            this.residue = this.residue - value;
+            this.residue -= value;
             return true;
-        } else {
-            return false;
         }
+        return false;
     }
     
     public boolean transfer(double value, account account) {
         if (this.residue >= value) {
-            this.residue = this.residue - value;
+            this.residue -= value;
             account.depositary(value);
             return false;
-        } else {
-            return false;
-        }
+        } 
+        return false;
     }
     
 }
