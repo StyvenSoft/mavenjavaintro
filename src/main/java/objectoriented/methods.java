@@ -18,6 +18,12 @@ public class methods {
         System.out.println(newAccount.residue);
         
         newAccount.remove(100);
+        System.out.println(newAccount.residue);
+        
+        account accountUser = new account();
+        accountUser.depositary(1000);
+        
+        accountUser.transfer(400, newAccount);
         
     }
     

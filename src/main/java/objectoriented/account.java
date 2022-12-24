@@ -28,4 +28,14 @@ public class account {
         }
     }
     
+    public boolean transfer(double value, account account) {
+        if (this.residue >= value) {
+            this.residue = this.residue - value;
+            account.depositary(value);
+            return false;
+        } else {
+            return false;
+        }
+    }
+    
 }
