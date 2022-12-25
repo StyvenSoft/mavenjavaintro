@@ -12,9 +12,11 @@ public class AccountAccess {
     public static void main(String[] args) {
         Account testAccount = new Account();
         
+        testAccount.setAgency(3);
         testAccount.depositary(400);
         testAccount.remove(300);
         
         System.out.println(testAccount.getBalance());
+        System.out.println(testAccount.getAgency());
     }
 }

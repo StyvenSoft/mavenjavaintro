@@ -10,7 +10,7 @@ package objectoriented;
  */
 public class Account {
     private double residue;
-    int agency;
+    private int agency;
     int number;
     Client holder = new Client();
     
@@ -43,6 +43,18 @@ public class Account {
     
     public void setBalance(double residue) {
         this.residue = residue;
+    }
+    
+    public void setAgency(int agency) {
+        if(agency > 0) {
+            this.agency = agency;
+        } else {
+            System.out.println("No permitido valores negativos: Agencia");
+        }
+    }
+    
+    public int getAgency() {
+        return agency;
     }
     
 }

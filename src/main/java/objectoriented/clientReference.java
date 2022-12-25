@@ -18,7 +18,7 @@ public class clientReference {
         userClient.phone = "311444556";
         
         Account accountUser = new Account();
-        accountUser.agency = 001;
+        accountUser.setAgency(1);
         // Crear objeto por refencia
         accountUser.holder = userClient;
         
