@@ -9,8 +9,32 @@ package objectoriented;
  * @author s7eveen
  */
 public class Client {
-    String fullName;
-    String document;
-    String phone;
+    private String fullName;
+    private String document;
+    private String phone;
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public String getDocument() {
+        return document;
+    }
+
+    public void setDocument(String document) {
+        this.document = document;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
     
 }

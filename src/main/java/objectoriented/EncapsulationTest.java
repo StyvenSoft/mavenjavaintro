@@ -8,11 +8,14 @@ package objectoriented;
  *
  * @author s7eveen
  */
-public class accountReference {
-    
+public class EncapsulationTest {
     public static void main(String[] args) {
-        Account accountUser = new Account();
+        Account testAccount = new Account();
+        Client testClient = new Client();
         
-        System.out.println(accountUser.holder.getFullName()); // Null
+        testClient.setFullName("Steveen");
+        testClient.setDocument("1066224455");
+        testClient.setPhone("322445121");
+        
     }
 }

@@ -11,7 +11,7 @@ package objectoriented;
 public class Account {
     private double residue;
     private int agency;
-    int number;
+    private int number;
     Client holder = new Client();
     
     public void depositary(double value) {
@@ -56,5 +56,11 @@ public class Account {
     public int getAgency() {
         return agency;
     }
+
+    public void setHolder(Client holder) {
+        this.holder = holder;
+    }
+    
+    
     
 }
