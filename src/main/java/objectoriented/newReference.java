@@ -12,17 +12,19 @@ public class newReference {
     
     public void newReference() {
         Account firstAccount = new Account();
-        firstAccount.residue = 23000;
+        firstAccount.setBalance(23000);
         
         Account secondAccount = firstAccount;
         
-        secondAccount.residue = 1200;
+        secondAccount.setBalance(1200);
         
-        System.out.println("Saldo primera cuenta: " + "cuenta: " + firstAccount.residue);
-        System.out.println("Saldo segunda cuenta: " + "cuenta: " + secondAccount.residue);
+        System.out.println("Saldo primera cuenta: " + "cuenta: " + firstAccount.getBalance());
+        System.out.println("Saldo segunda cuenta: " + "cuenta: " + secondAccount.getBalance());
         
-        secondAccount.residue += 400;
-        System.out.println("Saldo primera: " + "cuenta: " + firstAccount.residue);
+        // secondAccount.residue += 400;        
+        secondAccount.setBalance(400);
+
+        System.out.println("Saldo primera: " + "cuenta: " + firstAccount.getBalance());
 
     }
 }

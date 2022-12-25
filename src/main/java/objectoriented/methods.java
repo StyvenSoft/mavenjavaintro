@@ -15,10 +15,10 @@ public class methods {
         
         newAccount.depositary(3000);
         
-        System.out.println(newAccount.residue);
+        System.out.println(newAccount.getBalance());
         
         newAccount.remove(100);
-        System.out.println(newAccount.residue);
+        System.out.println(newAccount.getBalance());
         
         Account accountUser = new Account();
         accountUser.depositary(1000);

@@ -9,10 +9,10 @@ package objectoriented;
  * @author s7eveen
  */
 public class Account {
-    double residue;
+    private double residue;
     int agency;
     int number;
-    Client holder;
+    Client holder = new Client();
     
     public void depositary(double value) {
         // residue += value;
@@ -34,6 +34,15 @@ public class Account {
             return false;
         } 
         return false;
+    }
+    
+    // Metodo encapsulamiento
+    public double getBalance() {
+        return this.residue;
+    }
+    
+    public void setBalance(double residue) {
+        this.residue = residue;
     }
     
 }

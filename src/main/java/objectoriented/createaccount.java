@@ -13,15 +13,15 @@ public class createaccount {
     public void mainCreate() {
         Account firstAccount = new Account();
         
-        firstAccount.residue = 16000;
+        firstAccount.setBalance(16000);
         
-        System.out.println(firstAccount.residue);
+        System.out.println(firstAccount.getBalance());
         
         Account secondAccount = new Account();
         
-        secondAccount.residue = 5000;
+        secondAccount.setBalance(5000);
         
-        System.out.println(secondAccount.residue);
+        System.out.println(secondAccount.getBalance());
         
     }
 }
