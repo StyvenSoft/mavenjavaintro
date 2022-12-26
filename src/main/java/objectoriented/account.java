@@ -14,7 +14,7 @@ public class Account {
     private int number;
     Client holder = new Client();
     // Total de cuentas
-    public static int total = 0;
+    private static int total = 0;
         
     // Metodo constructor
     public Account(int agency) {
@@ -77,4 +77,7 @@ public class Account {
         return holder;
     }
     
+    public static int getTotal() {
+        return Account.total;
+    }
 }
