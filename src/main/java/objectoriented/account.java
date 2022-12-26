@@ -60,7 +60,9 @@ public class Account {
     public void setHolder(Client holder) {
         this.holder = holder;
     }
-    
-    
+
+    public Client getHolder() {
+        return holder;
+    }
     
 }

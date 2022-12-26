@@ -17,5 +17,10 @@ public class EncapsulationTest {
         testClient.setDocument("1066224455");
         testClient.setPhone("322445121");
         
+        testAccount.setHolder(testClient);
+        
+        System.out.println(testClient.getFullName());
+        
+        System.out.println(testAccount.getHolder().getFullName());
     }
 }
