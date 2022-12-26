@@ -10,7 +10,7 @@ package objectoriented;
  */
 public class EncapsulationTest {
     public static void main(String[] args) {
-        Account testAccount = new Account();
+        Account testAccount = new Account(12);
         Client testClient = new Client();
         
         testClient.setFullName("Steveen");

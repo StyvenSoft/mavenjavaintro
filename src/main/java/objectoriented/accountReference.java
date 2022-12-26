@@ -11,7 +11,7 @@ package objectoriented;
 public class accountReference {
     
     public static void main(String[] args) {
-        Account accountUser = new Account();
+        Account accountUser = new Account(13);
         
         System.out.println(accountUser.holder.getFullName()); // Null
     }

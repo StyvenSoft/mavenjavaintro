@@ -11,7 +11,7 @@ package objectoriented;
 public class newReference {
     
     public void newReference() {
-        Account firstAccount = new Account();
+        Account firstAccount = new Account(19);
         firstAccount.setBalance(23000);
         
         Account secondAccount = firstAccount;

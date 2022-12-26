@@ -10,7 +10,7 @@ package objectoriented;
  */
 public class AccountAccess {
     public static void main(String[] args) {
-        Account testAccount = new Account();
+        Account testAccount = new Account(11);
         
         testAccount.setAgency(3);
         testAccount.depositary(400);

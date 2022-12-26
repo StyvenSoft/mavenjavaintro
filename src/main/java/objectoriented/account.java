@@ -13,6 +13,18 @@ public class Account {
     private int agency;
     private int number;
     Client holder = new Client();
+    // Total de cuentas
+    public static int total = 0;
+        
+    // Metodo constructor
+    public Account(int agency) {
+        if(agency <= 0) {
+            System.out.println("No se permite valor: 0");
+        }
+        total++;
+        System.out.println("Total de cuentas creadas: " + total);
+        this.agency = agency;
+    }
     
     public void depositary(double value) {
         // residue += value;
