@@ -16,6 +16,7 @@ public class UserFunctionary {
         userOne.setFullName("Steveen Silva");
         userOne.setDocument("10855445511");
         userOne.setSalary(350000);
+        userOne.setType(0);
         
         System.out.println("Salario: " + userOne.getSalary());
         System.out.println("10% salario: " + userOne.getBonus());
