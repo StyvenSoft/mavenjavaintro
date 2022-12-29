@@ -18,5 +18,6 @@ public class UserFunctionary {
         userOne.setSalary(350000);
         
         System.out.println("Salario: " + userOne.getSalary());
+        System.out.println("10% salario: " + userOne.getBonus());
     }
 }

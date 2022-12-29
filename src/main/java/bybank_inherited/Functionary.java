@@ -13,6 +13,7 @@ public class Functionary {
     private String fullName;
     private String document;
     private double salary;
+    private int type;
 
     public Functionary() {
     }
@@ -40,5 +41,23 @@ public class Functionary {
     public void setSalary(double salary) {
         this.salary = salary;
     }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
     
+    public double getBonus() {
+        
+        if(this.type == 0) {
+            return this.salary * 0.1;
+        } else if(this.type == 1) {
+            return this.salary;
+        } else {
+            return 0;
+        }
+    }
 }
