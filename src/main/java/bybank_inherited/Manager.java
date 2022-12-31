@@ -20,7 +20,8 @@ public class Manager extends Functionary {
         return "abc".equals(password);
     }
     
-    public double getBonification() {
-        return super.getSalary(); // acceso a los metodos de la clase padre
+    public double getBonus() {
+        return super.getSalary() + // acceso a los metodos de la clase padre
+                super.getBonus(); // sobre escritura de metodo
     }
 }

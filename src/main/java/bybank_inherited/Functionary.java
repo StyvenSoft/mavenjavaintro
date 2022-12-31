@@ -51,7 +51,6 @@ public class Functionary {
     }
     
     public double getBonus() {
-        
         return this.salary * 0.1;
     }
 }
