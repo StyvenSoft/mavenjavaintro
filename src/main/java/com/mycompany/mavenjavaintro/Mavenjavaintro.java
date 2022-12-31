@@ -5,6 +5,7 @@
 
 package com.mycompany.mavenjavaintro;
 
+import bybank_inherited.InstanceControlBonus;
 import bybank_inherited.UserFunctionary;
 import bybank_inherited.UserManager;
 
@@ -18,5 +19,6 @@ public class Mavenjavaintro {
         System.out.println("Hello World!");
         UserFunctionary.main(args); // Salario: 350000.0
         UserManager.main(args); // 600000.0
+        InstanceControlBonus.main(args);
     }
 }
