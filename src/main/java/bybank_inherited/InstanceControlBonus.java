@@ -18,8 +18,14 @@ public class InstanceControlBonus {
         Manager userThree = new Manager();
         userThree.setSalary(860000);
         
+        Accountant userFour = new Accountant();
+        userFour.setSalary(500000);
+        
         ControlBonification controlBonus = new ControlBonification();
         
-        controlBonus.registerSalary(userTwo);
+        controlBonus.registerSalary(userTwo);        
+        controlBonus.registerSalary(userThree);        
+        controlBonus.registerSalary(userFour);
+
     }
 }
