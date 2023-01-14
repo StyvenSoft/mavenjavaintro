@@ -11,7 +11,7 @@ package bybank_inherited;
 public class InstanceControlBonus {
     
     public static void main(String[] args) {
-        Functionary userTwo = new Functionary();
+        Functionary userTwo = new Accountant();
     
         userTwo.setSalary(750000);
         

@@ -20,7 +20,7 @@ public class CurrentAccount extends Account {
     @Override
     public boolean remove(double value) {
         double commission = 0.2;
-        return super.remove(value); 
+        return super.remove(value + commission);
     }    
     
 }

@@ -11,7 +11,7 @@ package bybank_inherited;
 public class UserFunctionary {
     
     public static void main(String[] args) {
-        Functionary userOne = new Functionary();
+        Functionary userOne = new Accountant();
         
         userOne.setFullName("Steveen Silva");
         userOne.setDocument("10855445511");
