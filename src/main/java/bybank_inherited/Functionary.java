@@ -8,7 +8,7 @@ package bybank_inherited;
  *
  * @author s7eveen
  */
-public class Functionary {
+public abstract class Functionary { // Clase abstracta
     
     private String fullName;
     private String document;
@@ -50,7 +50,6 @@ public class Functionary {
         this.type = type;
     }
     
-    public double getBonus() {
-        return this.salary * 0.1;
-    }
+    public abstract double getBonus();
+    
 }

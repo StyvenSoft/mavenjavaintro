@@ -10,8 +10,6 @@ package bybank_inherited;
  */
 public class Accountant extends Functionary {
 
-    // sobreescribir metodo
-    @Override
     public double getBonus() {
         return 200; // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
     }

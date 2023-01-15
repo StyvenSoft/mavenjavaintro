@@ -21,7 +21,6 @@ public class Manager extends Functionary {
     }
     
     public double getBonus() {
-        return super.getSalary() + // acceso a los metodos de la clase padre
-                super.getBonus(); // sobre escritura de metodo
+        return super.getSalary() + this.getSalary() * 0.05;
     }
 }
