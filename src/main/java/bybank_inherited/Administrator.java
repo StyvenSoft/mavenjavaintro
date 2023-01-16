@@ -4,20 +4,15 @@
  */
 package bybank_inherited;
 
-import objectoriented.Account;
-
 /**
  *
  * @author s7eveen
  */
-public class SavingsAccount extends Account {
+public class Administrator extends Functionary {
     
-    public SavingsAccount(int agency) {
-        super(agency);
-    }
-
     @Override
-    public void depositary(double value) {
-        this.residue = this.residue + value;
+    public double getBonus(){
+        return 0;
     }
+    
 }

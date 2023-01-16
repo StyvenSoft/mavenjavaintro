@@ -8,8 +8,8 @@ package objectoriented;
  *
  * @author s7eveen
  */
-public class Account {
-    private double residue;
+public abstract class Account {
+    protected double residue;
     private int agency;
     private int number;
     Client holder = new Client();
@@ -26,10 +26,7 @@ public class Account {
         this.agency = agency;
     }
     
-    public void depositary(double value) {
-        // residue += value;
-        this.residue += value;
-    }
+    public abstract void depositary(double value);
     
     public boolean remove(double value) {
         if (this.residue >= value) {

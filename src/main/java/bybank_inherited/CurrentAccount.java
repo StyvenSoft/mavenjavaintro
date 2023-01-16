@@ -22,5 +22,10 @@ public class CurrentAccount extends Account {
         double commission = 0.2;
         return super.remove(value + commission);
     }    
+
+    @Override
+    public void depositary(double value) {
+        this.residue = this.residue + value;
+    }
     
 }
