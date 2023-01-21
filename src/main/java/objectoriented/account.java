@@ -4,6 +4,8 @@
  */
 package objectoriented;
 
+import bybank_inherited.InsufficientBalanceException;
+
 /**
  *
  * @author s7eveen
@@ -28,12 +30,12 @@ public abstract class Account {
     
     public abstract void depositary(double value);
     
-    public boolean remove(double value) {
-        if (this.residue >= value) {
-            this.residue -= value;
-            return true;
+    public void remove(double value) {
+        if(this.residue < value) {
+            throw new InsufficientBalanceException("No tiene valor!");
         }
-        return false;
+        this.residue -= value;
+        
     }
     
     public boolean transfer(double value, Account account) {
