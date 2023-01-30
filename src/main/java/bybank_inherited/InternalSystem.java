@@ -10,9 +10,9 @@ package bybank_inherited;
  */
 public class InternalSystem {
     
-    private String newpassword = "12345";
+    private String newpassword = "abc";
     
-    public boolean authentic(AuthenticableFunctionary manager) {
+    public boolean authentic(Authenticable manager) {
         
         boolean canLogin = manager.login(newpassword);
         

@@ -4,11 +4,13 @@
  */
 package objectoriented;
 
+import bybank_inherited.Authenticable;
+
 /**
  *
  * @author s7eveen
  */
-public class Client {
+public class Client extends Authenticable {
     private String fullName;
     private String document;
     private String phone;

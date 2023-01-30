@@ -8,8 +8,9 @@ package bybank_inherited;
  *
  * @author s7eveen
  */
-public class Administrator extends AuthenticableFunctionary {
+public class Administrator extends Authenticable {
     
+    @Override
     public double getBonus(){
         return 0;
     }

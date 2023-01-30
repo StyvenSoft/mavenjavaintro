@@ -8,7 +8,7 @@ package bybank_inherited;
  *
  * @author s7eveen
  */
-public class Manager extends AuthenticableFunctionary {
+public class Manager extends Authenticable {
         
     public double getBonus() {
         return 2000;
