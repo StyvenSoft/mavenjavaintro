@@ -8,19 +8,9 @@ package bybank_inherited;
  *
  * @author s7eveen
  */
-public class Manager extends Functionary {
-    
-    private String password;
-    
-    public void setPassword(String password) {
-        this.password = password;
-    }
-    
-    public boolean login(String password) {
-        return "abc".equals(password);
-    }
-    
+public class Manager extends AuthenticableFunctionary {
+        
     public double getBonus() {
-        return super.getSalary() + this.getSalary() * 0.05;
+        return 2000;
     }
 }

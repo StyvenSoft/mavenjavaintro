@@ -8,10 +8,16 @@ package bybank_inherited;
  *
  * @author s7eveen
  */
-public class Administrator extends AuthenticableFunctionary {
+public class AuthenticableFunctionary {
     
-    public double getBonus(){
-        return 0;
+     private String password;
+    
+    public void setPassword(String password) {
+        this.password = password;
+    }
+    
+    public boolean login(String password) {
+        return "abc".equals(password);
     }
     
 }

@@ -12,7 +12,7 @@ public class InternalSystem {
     
     private String newpassword = "12345";
     
-    public boolean authentic(Manager manager) {
+    public boolean authentic(AuthenticableFunctionary manager) {
         
         boolean canLogin = manager.login(newpassword);
         
