@@ -10,7 +10,7 @@ import bybank_inherited.Authenticable;
  *
  * @author s7eveen
  */
-public class Client extends Authenticable {
+public class Client implements Authenticable {
     private String fullName;
     private String document;
     private String phone;
@@ -37,6 +37,16 @@ public class Client extends Authenticable {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    @Override
+    public boolean login(String password) {
+        return false;
+    }
+
+    @Override
+    public void setPassword(String password) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
 }

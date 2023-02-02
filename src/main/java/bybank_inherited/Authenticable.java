@@ -8,22 +8,11 @@ package bybank_inherited;
  *
  * @author s7eveen
  */
-public class Authenticable extends Functionary {
+public interface Authenticable {
     
-     private String password;
     
-    public void setPassword(String password) {
-        this.password = password;
-    }
+    public void setPassword(String password);
     
-    public boolean login(String password) {
-        return "abc".equals(password);
-    }
+    public boolean login(String password);
 
-    @Override
-    public double getBonus() {
-        throw new UnsupportedOperationException("Not supported yet."); 
-        
-    }
-    
 }
